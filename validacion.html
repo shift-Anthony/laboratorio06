@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header id="head">
+        <h1>                <!--Encabezado y la barra de navegacion-->
+            Formulario de validacion
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="registro.html">REGISTRESE AL BOLETIN DE NOTICIAS</a></li><!--Permite acceder a registro.html-->
+                <li><a href="lenguajes.html">registrese en el formulario de lenguajes</a></li>  
+                <li><a >registrese en el formulario de validacion</a></li>  
+                <br>
+                 <li><a href="index.html">regrese al index</a></li> 
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <h2>Llene sus datos para el formulario</h2> <!--Formulario para suscribirse-->
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend>Formulario de validacion</legend>
+        <label for="correo">Correo electronico:</label>
+        <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" type="email" id="correo" name="correo" placeholder="Escriba su correo electronico" required> <!--correo requerido-->
+        <br><br>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Minimo 8 caracteres" minlength="8" required>
+        <br><br>
+        <label for="confirmarCOntraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmarCOntraseña" name="confirmarCOntraseña" minlength="8" required>
+        <br><br>
+    </fieldset>
+</body>
+</html>
