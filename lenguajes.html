@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <header id="head">
+        <h1>                <!--Encabezado y la barra de navegacion-->
+            Formulario de lenguajes de programacion
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="registro.html">REGISTRESE AL BOLETIN DE NOTICIAS</a></li><!--Permite acceder a registro.html-->
+                <li><a href="index.html">regrese al index</a></li>    <!--La barra de navegacion-->
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <h2>Llene sus datos para el formulario</h2> <!--Formulario para suscribirse-->
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend>Formulario de preferencias</legend>
+        <label for="archivo">Suba su foto de perfil:    </label>
+        <input type="file" id="archivo" name="archivo" required>
+        <br><br>
+        <label">Que tipos de lenguajes conoces?</label>
+        <label>
+        <br>
+        <input type="checkbox" name="HTML">HTML<br>   
+        <input type="checkbox" name="java">Java<br>
+        <input type="checkbox" name="CSS">CSS<br>
+        <input type="checkbox" name="javascript">Javascript<br>
+        <input type="checkbox" name="Python">Python<br>
+        <br>
+        </label>
+        <label for="numero">Cuantas horas de programacion estudias al dia?</label>
+        <input type="number" id="numero" name="numero" required>
+        <br><br>
+        <input type="submit" value="Guardar">    
+        <br><br>
+    </fieldset>
+</body>
+</html>
