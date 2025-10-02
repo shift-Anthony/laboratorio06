@@ -21,9 +21,8 @@
     </header>
 </head>
 <body>
- <body>
     <h2>Llene sus datos para suscribirse a los cursos</h2> <!--Formulario para suscribirse-->
-    <form action="" method="post"></form>
+    <form action="" method="post">
     <fieldset>
         <legend>Formulario para boletin de noticias</legend>
         <label for="nombre">Nombre:</label>
@@ -33,27 +32,39 @@
         <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
         <br><br>
         <label for="dni">DNI:</label>
-        <input type="tel" id="dni" name="dni" placeholder="Digite su DNI" required>
+        <input type="number" id="dni" name="dni" placeholder="Digite su DNI" required>
         <br><br>
         <label for="correo">Correo electronico:</label>
         <input type="email" id="correo" name="correo" placeholder="Escriba su correo electronico" required>
         <br><br>
-        <label">Que Curso:</label>
-        <label>
+        <label for="cursos">Que Curso:</label>
+        <select id="cursos">
+        <option>IDWEB</option>
+        <option>DSOO</option>
+        <option>JAVA</option>
+        </select>
         <br>
-        <input type="checkbox" name="IDWEB">IDWEB<br>   
-        <input type="checkbox" name="FP1">FP1<br>
-        <input type="checkbox" name="TND">TND<br>
         <br>
-        </label>
         <label">Modalidad:</label>
         <input type="radio" id="presencial" name="modalidad" value="P">
         <label for="presencial">Presencial</label>
         <input type="radio" id="virtual" name="modalidad" value="V">
         <label for="virtual">Virtual</label>
         <br><br>
-        <label">Horarios disponibles:</label>
+        <label>Horarios disponibles:</label>
+        <label>
+            <input type="checkbox" name="mañana" required>Mañana
+        </label>
+        <label>
+             <input type="checkbox" name="tarde" required>Tarde
+        </label>
+        <label>
+             <input type="checkbox" name="noche" required>Noche
+        </label>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
     </fieldset>
+    </form>
 </body>    
-</body>
 </html>
